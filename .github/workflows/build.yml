@@ -19,8 +19,10 @@ jobs:
           kernel-branch: 15.0
           config: vendor/kona-perf_defconfig
           arch: arm64
-          aosp-gcc: true
-          aosp-clang: true
+          aosp-gcc: false
+          aosp-clang: false
+          other-clang-url: https://github.com/kdrag0n/proton-clang
+          other-clang-branch: master
           ksu: true
           ksu-version: v0.9.5
           disable-lto: true
