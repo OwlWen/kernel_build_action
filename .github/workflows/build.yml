@@ -15,7 +15,7 @@ jobs:
       - name: Build Kernel
         uses: dabao1955/kernel_build_action@main
         with:
-          kernel-url: https://github.com/OwlWen/android_kernel_oneplus_sm8250
+          kernel-url: https://github.com/crdroidandroid/android_kernel_oneplus_sm8250
           kernel-branch: 15.0
           config: vendor/kona-perf_defconfig
           arch: arm64
