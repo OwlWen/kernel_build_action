@@ -15,16 +15,15 @@ jobs:
       - name: Build Kernel
         uses: dabao1955/kernel_build_action@main
         with:
-          kernel-url: https://github.com/AcmeUI-Devices/android_kernel_xiaomi_cas
-          kernel-dir: msm-4.19
-          kernel-branch: taffy
-          config: cas_defconfig
+          kernel-url: https://github.com/OwlWen/android_kernel_oneplus_sm8250
+          kernel-branch: 15.0
+          config: vendor/kona-perf_defconfig
           arch: arm64
           aosp-gcc: true
           aosp-clang: true
           ksu: true
-          ksu-version: main
-          android-version: 12
-          aosp-clang-version: r383902
+          ksu-version: v0.9.5
+          android-version: 15
+          aosp-clang-version: r529085
           disable-lto: true
           anykernel3: true
